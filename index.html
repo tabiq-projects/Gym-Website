@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta property="og:title" content="IRONFORGE GYM">
+    <meta property="og:description" content="Forge your legacy at IronForge Gym. Elite equipment, expert trainers, and a community built on strength.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IRONFORGE GYM">
+    <meta name="twitter:description" content="Forge your legacy at IronForge Gym. Elite equipment, expert trainers, and a community built on strength.">
+    <title>IRONFORGE GYM</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-content">
+            <a href="/" class="logo">
+                <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6.5 6.5a3.5 3.5 0 1 0 0 11"/>
+                    <path d="M17.5 6.5a3.5 3.5 0 1 1 0 11"/>
+                    <path d="M6.5 12h11"/>
+                    <path d="M3 12h1"/>
+                    <path d="M20 12h1"/>
+                </svg>
+                <span class="logo-text">IRON<span class="text-primary">FORGE</span></span>
+            </a>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#programs">Programs</a>
+                <a href="#trainers">Trainers</a>
+                <a href="#membership">Membership</a>
+                <a href="#contact">Contact</a>
+                <button class="btn btn-primary btn-skew"><span>Join Now</span></button>
+            </div>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" x2="20" y1="12" y2="12"/>
+                    <line x1="4" x2="20" y1="6" y2="6"/>
+                    <line x1="4" x2="20" y1="18" y2="18"/>
+                </svg>
+                <svg class="icon-close hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 6 6 18"/>
+                    <path d="m6 6 12 12"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mobile-menu hidden" id="mobile-menu">
+            <div class="container mobile-menu-content">
+                <a href="#programs" class="mobile-link">Programs</a>
+                <a href="#trainers" class="mobile-link">Trainers</a>
+                <a href="#membership" class="mobile-link">Membership</a>
+                <a href="#contact" class="mobile-link">Contact</a>
+                <button class="btn btn-primary btn-full">Join Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="images/dark_moody_gym_hero_background_with_neon_lights.png" alt="Gym Background">
+            <div class="hero-overlay-gradient"></div>
+            <div class="hero-overlay-dark"></div>
+        </div>
+
+        <div class="container hero-content animate-fadeInUp">
+            <span class="hero-badge">Est. 2024</span>
+            <h1 class="hero-title">
+                Forge Your <br>
+                <span class="text-gradient">Legacy</span>
+            </h1>
+            <p class="hero-subtitle">
+                Stop wishing. Start working. Elite equipment, world-class trainers, and an atmosphere that demands your best.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary btn-lg btn-skew"><span>Start Free Trial</span></button>
+                <button class="btn btn-outline btn-lg btn-skew"><span>View Programs</span></button>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <div class="programs-header">
+                <div class="programs-title-wrap">
+                    <h2 class="section-label">Our Programs</h2>
+                    <h3 class="section-title">
+                        Designed to <span class="text-stroke">Destroy</span> <br>
+                        And <span>Rebuild</span>
+                    </h3>
+                </div>
+                <p class="programs-desc">
+                    Whether you're training for a marathon, a powerlifting meet, or just life—we have the blueprint for your success.
+                </p>
+            </div>
+
+            <div class="programs-grid">
+                <div class="program-card animate-on-scroll" data-delay="0">
+                    <div class="program-image">
+                        <img src="images/strength_training_weightlifting_close_up.png" alt="Power & Strength">
+                        <div class="program-overlay"></div>
+                    </div>
+                    <div class="program-content">
+                        <div class="program-info">
+                            <span class="program-category">Lifting</span>
+                            <h4 class="program-title">Power & Strength</h4>
+                            <p class="program-description">Build raw power with our olympic lifting platforms and heavy-duty racks.</p>
+                        </div>
+                        <div class="program-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card animate-on-scroll" data-delay="100">
+                    <div class="program-image">
+                        <img src="images/cardio_workout_running_high_energy.png" alt="High Velocity">
+                        <div class="program-overlay"></div>
+                    </div>
+                    <div class="program-content">
+                        <div class="program-info">
+                            <span class="program-category">Cardio</span>
+                            <h4 class="program-title">High Velocity</h4>
+                            <p class="program-description">Endurance training that pushes your limits on state-of-the-art cardio tech.</p>
+                        </div>
+                        <div class="program-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card animate-on-scroll" data-delay="200">
+                    <div class="program-image">
+                        <img src="images/hiit_battle_ropes_workout.png" alt="Inferno HIIT">
+                        <div class="program-overlay"></div>
+                    </div>
+                    <div class="program-content">
+                        <div class="program-info">
+                            <span class="program-category">Conditioning</span>
+                            <h4 class="program-title">Inferno HIIT</h4>
+                            <p class="program-description">High-intensity intervals designed to torch calories and boost metabolism.</p>
+                        </div>
+                        <div class="program-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="trainers">
+        <div class="container">
+            <div class="trainers-header">
+                <h2 class="section-title-center">
+                    Elite <span class="text-primary">Coaching</span>
+                </h2>
+                <p class="trainers-subtitle">
+                    Expert guidance to push you past your breaking point—safely.
+                </p>
+            </div>
+
+            <div class="trainers-grid">
+                <div class="trainer-card animate-on-scroll-left">
+                    <div class="trainer-image">
+                        <img src="images/male_personal_trainer_portrait.png" alt="Alex 'The Hammer' Kovac">
+                        <div class="trainer-overlay"></div>
+                        <div class="trainer-info">
+                            <h3 class="trainer-name">Alex 'The Hammer' Kovac</h3>
+                            <p class="trainer-role">Head Coach / Strength</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trainer-card animate-on-scroll-right">
+                    <div class="trainer-image">
+                        <img src="images/female_personal_trainer_portrait.png" alt="Sarah 'Viper' Vance">
+                        <div class="trainer-overlay"></div>
+                        <div class="trainer-info">
+                            <h3 class="trainer-name">Sarah 'Viper' Vance</h3>
+                            <p class="trainer-role">HIIT Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership" class="membership">
+        <div class="membership-bg"></div>
+        <div class="container membership-content">
+            <div class="membership-header">
+                <h2 class="section-label">Membership</h2>
+                <h3 class="section-title-center">
+                    Invest In <span class="text-stroke">Yourself</span>
+                </h3>
+            </div>
+
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h4 class="plan-name">Basic</h4>
+                        <div class="plan-price">
+                            <span class="price">$29</span>
+                            <span class="period">/ month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Access to gym floor
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Locker room access
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            1 Free PT Session
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Free WiFi
+                        </li>
+                    </ul>
+                    <button class="btn btn-secondary btn-full">Choose Basic</button>
+                </div>
+
+                <div class="plan-card featured">
+                    <div class="plan-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h4 class="plan-name">Pro</h4>
+                        <div class="plan-price">
+                            <span class="price">$59</span>
+                            <span class="period">/ month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            24/7 Access
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            All Classes Included
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Guest Privileges
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Sauna & Spa Access
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Monthly Body Scan
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary btn-full">Choose Pro</button>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h4 class="plan-name">Elite</h4>
+                        <div class="plan-price">
+                            <span class="price">$99</span>
+                            <span class="period">/ month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Unlimited PT Sessions
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Nutrition Plan
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Private Locker
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Laundry Service
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Priority Booking
+                        </li>
+                    </ul>
+                    <button class="btn btn-secondary btn-full">Choose Elite</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title">
+                        Get In <span class="text-primary">Touch</span>
+                    </h2>
+                    <p class="contact-desc">
+                        Ready to start your transformation? Drop by for a tour or send us a message. First session is on us.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>123 Iron Street, Muscle City, CA 90210</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>train@ironforge.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrap">
+                    <h3 class="form-title">Send Message</h3>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Goal</label>
+                            <input type="text" placeholder="Weight Loss, Strength, etc.">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea placeholder="Tell us about your fitness journey..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-white btn-full btn-lg">Send Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6.5 6.5a3.5 3.5 0 1 0 0 11"/>
+                        <path d="M17.5 6.5a3.5 3.5 0 1 1 0 11"/>
+                        <path d="M6.5 12h11"/>
+                        <path d="M3 12h1"/>
+                        <path d="M20 12h1"/>
+                    </svg>
+                    <span class="logo-text">IRON<span class="text-primary">FORGE</span></span>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 IronForge Gym. All rights reserved.</p>
+                <p>
+                    <span class="text-primary font-semibold">Niche</span> — A demo project for designer portfolio | 
+                    <a href="https://tabiqahad.in/" target="_blank" rel="noopener noreferrer">Design By Tabiq Ahmad</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
